@@ -7,6 +7,6 @@ RUN apk --no-cache add apache2 php7 php7-apache2 php7-fpm php7-opcache php-sessi
 
 COPY intranet/ .
 
-EXPOSE 80
+EXPOSE 8080
 ENTRYPOINT ["httpd","-D","FOREGROUND"]
 
